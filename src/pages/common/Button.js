@@ -6,12 +6,15 @@ const StyledButton = styled.button`
         margin-right: 0;
     }
 
-    padding: 6px 12px;
+    min-width: 180px;
+    height: 60px;
+    padding: 10px 15px;
     border-radius: 8px;
     margin-right: 10px;
     font-size: 1rem;
+    font-weight: 700;
     line-height: 1.5;
-    border: 1px solid lightgray;
+    border: none;
 
     color: ${(props) => props.color || "gray"};
     background: ${(props) => props.background || "white"};
@@ -20,8 +23,8 @@ const StyledButton = styled.button`
         props.primary &&
         css`
             color: white;
-            background: navy;
-            border-color: navy;
+            background: #000;
+            border-color: #333;
         `}
 `;
 
